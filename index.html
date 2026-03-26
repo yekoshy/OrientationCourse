@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Orientation Mind Maps</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #ecf0f1;
+            border-bottom: 2px solid #bdc3c7;
+        }
+
+        .tab-button {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #7f8c8d;
+            transition: 0.3s;
+        }
+
+        .tab-button:hover {
+            background-color: #ddd;
+            color: #2c3e50;
+        }
+
+        .tab-button.active {
+            background-color: #fff;
+            color: #3498db;
+            border-bottom: 3px solid #3498db;
+        }
+
+        .tab-content {
+            display: none;
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .tab-content.active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* The markmap container needs to fill the space */
+        .markmap {
+            width: 100%;
+            height: 100%;
+            min-height: 500px;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@0.15.2"></script>
+</head>
+<body>
+
+    <div class="header">
+        <h2>QA Orientation Course Content</h2>
+    </div>
+
+    <div class="tabs">
+        <button class="tab-button active" onclick="openTab(event, 'Session1')">Pre-Session #1</button>
+        <button class="tab-button" onclick="openTab(event, 'Session2')">Pre-Session #2</button>
+    </div>
+
+    <div id="Session1" class="tab-content active">
+        <div class="markmap">
+# Pre-Session #1
+## Testcase creation & Bug reporting
+- [Read](https://www.ibm.com/think/topics/software-testing?mhsrc=ibmsearch_a&mhq=software%20testing)
+- [Create an account & start the academy](https://www.utest.com/academy)
+- Download Charlesproxy
+  - [Charlesproxy](https://www.charlesproxy.com/download/)
+  - [Windows & Android tutorial](https://www.softwaretestinghelp.com/charles-proxy-tutorial/)
+  - [Mac tutorial](https://analystadmin.com/how-to-set-up-charles-proxy-on-macos/)
+  -[IOS tutorial](https://www.kodeco.com/21931256-charles-proxy-tutorial-for-ios)
+- [Testcase creation](https://bugeater.web.app/app/list)
+  - [http://testingchallenges.thetestingmap.org/index.php](http://testingchallenges.thetestingmap.org/index.php)
+-[Create testcases & Bug reports](https://google-gruyere.appspot.com/start)
+## HTML
+- HTML
+  - [reference](https://www.w3schools.com/html/default.asp)
+  -[Tutorials](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
+- Get FreeCodeCamp HTML certification
+  - Survey form
+    - [Video Tutorial](https://www.youtube.com/watch?v=xnoAs_NqKlU)
+  - A Tribute Page
+    - [Video Tutorial](https://www.youtube.com/watch?v=gu_rUuKFS3E)
+  - Technical Documentation Page
+    - [Video Tutorial](https://www.youtube.com/watch?v=QCMmxHaNhi0&list=PLktFju7xyBzQ0khe04DejS2M4MaXbFK_v)
+  - Product Landing Page
+    - [Video Tutorial](https://www.youtube.com/playlist?list=PLktFju7xyBzQ_kSeGauMes0IlGa6qCuyS)
+  - Personal Portfolio Page
+    - [Video Tutorial](https://www.youtube.com/watch?v=afVQz8yUPAE&list=PLktFju7xyBzQDTD6H-dBtQW84i1h32P0F)
+## JS
+- JS
+  - [reference](https://www.w3schools.com/js/)
+  - [2nd reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+  - [Tutorials](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/)
+- Get FreeCodeCamp JS certification
+  - Checker Project
+    - [Youtube](https://www.youtube.com/watch?v=XV5OCibNpLI&list=PLehRZjGCVhQLTWPN8mTo3rlRDQff9fCmT)
+  - Numeral Converter Project
+    - [Youtube](https://www.youtube.com/watch?v=t6Yr2PBmwC0)
+  - Telephone number validator Project
+    - [Youtube](https://www.youtube.com/watch?v=t6Yr2PBmwC0)
+  - Cash Register Project
+    - [Youtube](https://www.youtube.com/watch?v=t6Yr2PBmwC0)
+  - Pokemon search Project
+    - [Youtube](https://www.youtube.com/watch?v=F3uKlVNrRck)
+- [More Frontend projects to replicate](https://www.vanillajavascriptprojects.com/)
+-[Get TestAutomation University JS certification](https://testautomationu.applitools.com/javascript-tutorial/)
+## API testing
+- [Get TestAutomation University API certification](https://testautomationu.applitools.com/exploring-service-apis-through-test-automation/)
+-[Get TestAutomation University Postman certification](https://testautomationu.applitools.com/postman-tutorial/)
+-[Create one postman collection](https://reqres.in/)
+## Slides
+- [Bug Report](https://docs.google.com/presentation/d/1n7DVZ-NSYod5ulkl9EQqSadq1j_FZAuBHm00UDOxq0k/edit?usp=sharing)
+-[Web application testing](https://docs.google.com/presentation/u/0/d/14Pg_6bI9RL0QuO03_0_75KovIMe-kMg3jDvVq4NU-gM/edit)
+- [Testcases](https://docs.google.com/presentation/u/0/d/1CmQMMdF1LBbMvaw1-WxdcnFmI5yw6Ob2qcGC27nkPh8/edit)
+-[HTML & CSS](https://docs.google.com/presentation/u/0/d/1KMJyIgz2wCPW0vx11h2Lr5oqHooTQPAW0V4sNkSvRxk/edit)
+- [Basics in Programming](https://docs.google.com/presentation/u/0/d/1JSVLjOhti-f6bCHY5LW8SnBumvxVsojbe0LnTtumntY/edit)
+- [Intro into API](https://docs.google.com/presentation/u/0/d/1NfvrStcr4SExkvFQmrdHbWAHb2ENZhi23qb_84lwzjs/edit)
+-[Intro into Postman](https://docs.google.com/presentation/u/0/d/1ccPhzY2ANUA1koNq7e_CHQBaEUdjYlsDEu_YFj7FFbs/edit)
+        </div>
+    </div>
+
+    <div id="Session2" class="tab-content">
+        <div class="markmap">
+# Pre-Session #2
+## Record & Play (Selenium IDE)
+- [Get TestAutomation University Locators certification](https://testautomationu.applitools.com/web-element-locator-strategies/)
+- [Selenium IDE reference](https://www.selenium.dev/selenium-ide/docs/en/introduction/getting-started)
+- [Download Selenium IDE add on](https://addons.mozilla.org/en-GB/firefox/addon/selenium-ide/)
+-[Get TestAutomation University Selenium IDE certification](https://testautomationu.applitools.com/codeless-test-automation-with-selenium-ide/)
+- [Create Selenium IDE project](https://practicetestautomation.com/practice-test-login/)
+- [HTML DOM events](https://www.w3schools.com/jsref/dom_obj_event.asp)
+## Snippets
+-[Get TestAutomation University Snippets certification](https://testautomationu.applitools.com/automating-in-the-browser-using-javascript/)
+- [Write Snippet testing](https://demoqa.com/automation-practice-form)
+## Selenium webdriver
+- [Selenium webdriver reference](https://www.selenium.dev/documentation/overview/)
+- [Get TestAutomation University Chai certification](https://testautomationu.applitools.com/chai-test-assertions/)
+- [Get the QA freecodecamp certificate](https://www.freecodecamp.org/learn/quality-assurance/)
+  - [Youtube](https://www.youtube.com/playlist?list=PLhGp6N0DI_1SVteCORbgwlxJkAbcTiZyj)
+- [Get TestAutomation University Mocha certification](https://testautomationu.applitools.com/mocha-javascript-tests/)
+- [Follow Tutorial](https://lo-victoria.com/automating-tests-with-selenium-1-getting-started)
+  -[https://lo-victoria.com/automating-tests-with-selenium-2-assertion-based-tests](https://lo-victoria.com/automating-tests-with-selenium-2-assertion-based-tests)
+  -[https://lo-victoria.com/automating-tests-with-selenium-3-integrating-with-mocha](https://lo-victoria.com/automating-tests-with-selenium-3-integrating-with-mocha)
+## Slides
+- [Selenium IDE](https://docs.google.com/presentation/u/0/d/1U7Jj4ORgYUrSxhcvVT0yFzcTxNYHlAdYwrh5MaDXk68/edit)
+- [Selenium Webdriver](https://docs.google.com/presentation/u/0/d/1bBp7M3dES6A_muXi2ZbzM2n6gv6O3XRHzyhdwPANRzI/edit)
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            // Get all elements with class="tab-content" and hide them
+            var tabcontent = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+
+            // Get all elements with class="tab-button" and remove the class "active"
+            var tablinks = document.getElementsByClassName("tab-button");
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
